@@ -1,0 +1,13 @@
+{
+	"name": "AzureBlobStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "blob store in the store account \"energydatastorageaccount\"",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=energydatastorageaccount;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDU1QUU0NTgyLTJBN0QtNEEyOC1BM0JBLUM2QTBFRkJBNEQyOV83ZjUwYTE1OC04ZGM4LTQyMDktYjA5OS0zYTgxMWM2MjI0NjYiDQp9"
+		}
+	}
+}
