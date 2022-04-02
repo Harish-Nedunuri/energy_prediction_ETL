@@ -1,0 +1,9 @@
+{
+	"name": "dp203datafactory-hn",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5672b6e8-851a-469c-9256-32a3b921687e",
+		"tenantId": "56a98037-dddf-4857-acb8-416aa6c4fa00"
+	}
+}
