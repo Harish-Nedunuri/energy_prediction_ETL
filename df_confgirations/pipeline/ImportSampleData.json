@@ -1,10 +1,10 @@
 {
-	"name": "CopyPipeline_63r",
+	"name": "ImportSampleData",
 	"properties": {
 		"description": "This task will unzip the file in the landing container and place it in the sampledata container",
 		"activities": [
 			{
-				"name": "Copy_63r",
+				"name": "Copy_dlk",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
