@@ -1,0 +1,10 @@
+{
+	"name": "ImportSweetTreatsSales",
+	"properties": {
+		"description": "sweet",
+		"folder": {
+			"name": "Chapter3"
+		},
+		"annotations": []
+	}
+}
