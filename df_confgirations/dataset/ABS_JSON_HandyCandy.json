@@ -1,5 +1,5 @@
 {
-	"name": "ABS_JSON_SugarCube",
+	"name": "ABS_JSON_HandyCandy",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage1",
@@ -13,21 +13,23 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "April.json",
-				"folderPath": "azure-data-factory-by-example-main/SampleData/SugarCube/2020/Q2",
+				"folderPath": "azure-data-factory-by-example-main/SampleData/HandyCandy",
 				"container": "sampledata"
 			}
 		},
 		"schema": {
 			"type": "object",
 			"properties": {
-				"Month": {
+				"TransactionId": {
 					"type": "string"
 				},
-				"Company": {
+				"TransactionDate": {
 					"type": "string"
 				},
-				"Sales": {
+				"StoreId": {
+					"type": "string"
+				},
+				"Items": {
 					"type": "array",
 					"items": {
 						"type": "object",
@@ -35,13 +37,7 @@
 							"Product": {
 								"type": "string"
 							},
-							"ManufacturerProductCode": {
-								"type": "string"
-							},
-							"Units": {
-								"type": "integer"
-							},
-							"Value": {
+							"Price": {
 								"type": "number"
 							}
 						}

@@ -21,7 +21,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "azure-data-factory-by-example-main/sampledata/sugarcube",
+							"wildcardFolderPath": "azure-data-factory-by-example-main/SampleData/SugarCube",
 							"wildcardFileName": "*.json",
 							"enablePartitionDiscovery": false
 						},
@@ -31,7 +31,6 @@
 					},
 					"sink": {
 						"type": "AzureSqlSink",
-						"preCopyScript": "TRUNCATE TABLE dbo.Sales_LOAD",
 						"writeBehavior": "insert",
 						"sqlWriterUseTableLock": false,
 						"disableMetricsCollection": false
@@ -94,7 +93,8 @@
 									"type": "Decimal"
 								}
 							}
-						]
+						],
+						"collectionReference": "$['Sales']"
 					}
 				},
 				"inputs": [
