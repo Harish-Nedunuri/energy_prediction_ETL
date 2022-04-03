@@ -33,7 +33,7 @@
 							{
 								"name": "RunSeqNo",
 								"value": {
-									"value": "@pipeline().RunId",
+									"value": "@activity('Lookup  RunSeqNo').output.firstRow.RunSeqNo",
 									"type": "Expression"
 								}
 							}
@@ -99,21 +99,14 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[LogPipelineExecution]",
+					"storedProcedureName": "[dbo].[LogPipelineEnd]",
 					"storedProcedureParameters": {
 						"FilesRead": {
 							"value": {
-								"value": "@activity('Import Sales Data').output.filesRead",
+								"value": "@activity('Import Sales Data').output.filesRead\n",
 								"type": "Expression"
 							},
 							"type": "Int32"
-						},
-						"PipelineRunId": {
-							"value": {
-								"value": "@pipeline().RunId",
-								"type": "Expression"
-							},
-							"type": "Guid"
 						},
 						"RowsCopied": {
 							"value": {
@@ -131,10 +124,21 @@
 						},
 						"RunEndDateTime": {
 							"value": {
-								"value": "@utcnow()",
+								"value": "@utcNow()",
 								"type": "Expression"
 							},
 							"type": "DateTime"
+						},
+						"RunSeqNo": {
+							"value": {
+								"value": "@activity('Lookup  RunSeqNo').output.firstRow.RunSeqNo",
+								"type": "Expression"
+							},
+							"type": "Int32"
+						},
+						"RunStatus": {
+							"value": "\"Done\"",
+							"type": "String"
 						}
 					}
 				},
