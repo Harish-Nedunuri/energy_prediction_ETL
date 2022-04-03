@@ -19,9 +19,7 @@
 						"type": "JsonSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"wildcardFolderPath": "azure-data-factory-by-example-main/ SampleData/SugarCube/2020/Q2",
-							"wildcardFileName": "*.json",
+							"fileListPath": "sampledata/azure-data-factory-by-example-main/SampleData/SugarCube/2020/Q2/*.json",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
