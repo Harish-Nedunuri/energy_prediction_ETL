@@ -1,5 +1,5 @@
 {
-	"name": "ImportSweetTreatsSales",
+	"name": "ImportSweetTreatsSales_audit",
 	"properties": {
 		"description": "sweet",
 		"activities": [
