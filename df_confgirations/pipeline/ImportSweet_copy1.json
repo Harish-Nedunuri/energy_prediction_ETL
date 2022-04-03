@@ -1,5 +1,5 @@
 {
-	"name": "ImportSweetTreatsSales_copy1",
+	"name": "ImportSweet_copy1",
 	"properties": {
 		"description": "sweet",
 		"activities": [
@@ -21,7 +21,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "azure-data-factory-by-example-main/ SampleData/SugarCube",
+							"wildcardFolderPath": "azure-data-factory-by-example-main/sampledata/sugarcube",
 							"wildcardFileName": "*.json",
 							"enablePartitionDiscovery": false
 						},
