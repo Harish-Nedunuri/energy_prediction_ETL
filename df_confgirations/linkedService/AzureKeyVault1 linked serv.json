@@ -1,0 +1,10 @@
+{
+	"name": "AzureKeyVault1 linked serv",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://energy-rg-key-vault.vault.azure.net/"
+		}
+	}
+}
