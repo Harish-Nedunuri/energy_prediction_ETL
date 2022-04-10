@@ -228,7 +228,7 @@
 			},
 			"WildcardFileName": {
 				"type": "string",
-				"defaultValue": "\".csv\""
+				"defaultValue": "\".csv"
 			}
 		},
 		"variables": {
