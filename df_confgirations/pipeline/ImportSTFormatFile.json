@@ -1,5 +1,5 @@
 {
-	"name": "ImportSTFormatFolder",
+	"name": "ImportSTFormatFile",
 	"properties": {
 		"description": "sweet",
 		"activities": [
@@ -232,7 +232,7 @@
 			}
 		},
 		"folder": {
-			"name": "Chater5"
+			"name": "Chapter6"
 		},
 		"annotations": []
 	}
