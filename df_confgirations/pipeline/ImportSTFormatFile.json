@@ -223,6 +223,9 @@
 			"WildcardFileName": {
 				"type": "string",
 				"defaultValue": "\".csv"
+			},
+			"WildcardFolderPath": {
+				"type": "string"
 			}
 		},
 		"variables": {
