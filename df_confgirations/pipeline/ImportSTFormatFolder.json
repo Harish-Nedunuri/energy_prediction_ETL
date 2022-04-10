@@ -41,10 +41,7 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": {
-								"value": "@pipeline().parameters.WildcardFolderPath",
-								"type": "Expression"
-							},
+							"wildcardFolderPath": "azure-data-factory-by-example-main/SampleData/SweetTreats",
 							"wildcardFileName": {
 								"value": "@pipeline().parameters.WildcardFileName",
 								"type": "Expression"
@@ -223,9 +220,6 @@
 			}
 		],
 		"parameters": {
-			"WildcardFolderPath": {
-				"type": "string"
-			},
 			"WildcardFileName": {
 				"type": "string",
 				"defaultValue": "\".csv"
