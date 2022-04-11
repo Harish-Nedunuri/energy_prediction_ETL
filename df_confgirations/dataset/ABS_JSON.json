@@ -19,6 +19,9 @@
 			"File": {
 				"type": "string",
 				"defaultValue": "."
+			},
+			"LinkedServiceConnectionSecret": {
+				"type": "string"
 			}
 		},
 		"folder": {
