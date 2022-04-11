@@ -2,7 +2,7 @@
 	"name": "ABS_JSON_keyvault",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "AzureBlobStoragekeyvault",
+			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
