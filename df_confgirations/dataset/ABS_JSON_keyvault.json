@@ -11,11 +11,11 @@
 			},
 			"Directory": {
 				"type": "string",
-				"defaultValue": "\".\""
+				"defaultValue": "."
 			},
 			"File": {
 				"type": "string",
-				"defaultValue": "\".\""
+				"defaultValue": "."
 			}
 		},
 		"folder": {
