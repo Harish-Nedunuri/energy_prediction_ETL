@@ -1,0 +1,31 @@
+{
+	"name": "MoviewADLS",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ABS_CSV_CandyShack",
+						"type": "DatasetReference"
+					},
+					"name": "ABSCSVdata"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          SalesMonth as string,",
+				"          Retailer as string,",
+				"          Product as string,",
+				"          SalesValueUSD as string,",
+				"          UnitsSold as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> ABSCSVdata"
+			]
+		}
+	}
+}
